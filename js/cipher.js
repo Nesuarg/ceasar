@@ -27,9 +27,9 @@ function getCrypt(Decrypt) {
 function caesarShift(text, shift) {
 	var result = "";
 	for (var item = 0; item < text.length; item++) {
-		var c = text.charCodeAt(item);
-		if      (c >= 65 && c <=  90) result += String.fromCharCode((c - 65 + shift) % 26 + 65);  // Uppercase
-		else if (c >= 97 && c <= 122) result += String.fromCharCode((c - 97 + shift) % 26 + 97);  // Lowercase
+		var x = text.charCodeAt(item);
+		if      (x >= 65 && x <=  90) result += String.fromCharCode((x - 65 + shift) % 26 + 65);  // Uppercase
+		else if (x >= 97 && x <= 122) result += String.fromCharCode((x - 97 + shift) % 26 + 97);  // Lowercase
 		else                          result += text.charAt(item);  // Copy
 	}
 	return result;
