@@ -1,0 +1,36 @@
+body {
+    font-family: "Helvetica", "sans-serif";
+    background-color: whitesmoke;
+}
+
+
+
+.row {
+    margin: 25px auto;
+}
+
+legend {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 6em;
+    font-family: "Poiret One", "Helvetica", "sans-serif";
+}
+
+label {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.control-label {
+    font-size: 1em;
+    padding-top: 0.5em;
+}
+
+.shifter {
+    max-width: 200px;
+}
+
+
+.btn {
+    min-width: 150px;
+}

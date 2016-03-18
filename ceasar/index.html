@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>CEASAR CIPHER</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <legend>CEASAR CIPHER</legend>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <label for="text">Place your text here to crypt or decrypt</label>
+                                <textarea class="form-control" id="myTextArea" rows="4" placeholder="Aleast put some text here to make it work">Spinach? If I want iron, I will eat iron</textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                                 <!-- Not Mobile friendly label fix later -->
+                                <label class="control-label" for="text">Insert a number from 0-26</label>
+                            <div class="shifter col-md-6 col-md-offset-3">
+                                <input class="form-control" type="text" id="myShifter" value="3">
+                            </div>
+                        </div> 
+                        
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <buttom class="btn btn-default" value="Encrypt" onclick="getCrypt(false);" style="width: 100%;">Crypt it</buttom>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <buttom class="btn btn-default" value="Decrypt" onclick="getCrypt(true);" style="width: 100%;">Decrypt it</buttom>
+                            </div>
+                        </div>
+                    </fieldset>
+            </form>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="js/cipher.js" type="text/javascript"></script>
+    </body>
+</html>

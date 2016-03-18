@@ -18,8 +18,8 @@ function getCrypt(Decrypt) {
 	}
 	if (Decrypt)
 		shift = (26 - shift) % 26;
-	var textElem = document.getElementById("myTextArea");
-	textElem.value = caesarShift(textElem.value, shift);
+	var textElement = document.getElementById("myTextArea");
+	textElement.value = caesarShift(textElement.value, shift);
 }
 
 
