@@ -1,2 +1,2 @@
 # ceasar
-Ceasar cipher in javascript.
+Ceasar cipher & vigenere cipher in javascript.
