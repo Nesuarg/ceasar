@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>CEASAR CIPHER</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div class="container">
+        <form method="get" onsubmit="return false">
+            <legend>GCD</legend>
+            <fieldset class="form-group">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <label for="text">Inputs goes below, matey</label>
+                         <input type="number" class="form-control" placeholder="A" id="inputA" oninput="calc()">
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Not Mobile friendly label fix later -->
+                    <div class="col-md-6 col-md-offset-3">
+                      <input type="number" class="form-control" placeholder="B" id="inputB" oninput="calc()">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                         <input type="number" class="form-control" id="output" readonly="readonly" placeholder="result goes here">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/gcd.js" type="text/javascript"></script>
+</body>
+
+</html>
